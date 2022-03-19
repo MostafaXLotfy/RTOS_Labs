@@ -21,37 +21,61 @@ Target DLL:      lmidk-agdi.dll V???
 Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
-D:\college\semster8\embedded\labs\labs.uvprojx
+D:\college\semster8\embedded\labs_code\labs.uvprojx
 Project File Date:  03/11/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Rebuild target 'Target 1'
+main.c(9): warning: In file included from...
+./BSP.h(11): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+main.c(12): warning: no previous extern declaration for non-static variable 'sp_toggle_blue' [-Wmissing-variable-declarations]
+uint32_t *sp_toggle_blue = &toggle_blue_stack[40];
+          ^
+main.c(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t *sp_toggle_blue = &toggle_blue_stack[40];
+^
+main.c(16): warning: no previous extern declaration for non-static variable 'sp_toggle_red' [-Wmissing-variable-declarations]
+uint32_t *sp_toggle_red = &toggle_red_stack[40];
+          ^
+main.c(16): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t *sp_toggle_red = &toggle_red_stack[40];
+^
+main.c(20): warning: function 'toggle_red' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void toggle_red(void){
+                     ^
+main.c(30): warning: function 'toggle_blue' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void toggle_blue(void){
+                      ^
+main.c(76): warning: 'return' will never be executed [-Wunreachable-code-return]
+  return 0;
+         ^
+main.c(11): warning: no previous extern declaration for non-static variable 'toggle_blue_stack' [-Wmissing-variable-declarations]
+uint32_t toggle_blue_stack[40];
+         ^
+main.c(11): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t toggle_blue_stack[40];
+^
+main.c(15): warning: no previous extern declaration for non-static variable 'toggle_red_stack' [-Wmissing-variable-declarations]
+uint32_t toggle_red_stack[40];
+         ^
+main.c(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t toggle_red_stack[40];
+^
+8 warnings generated.
+compiling main.c...
 BSP.c(4): warning: In file included from...
 ./BSP.h(11): warning: no newline at end of file [-Wnewline-eof]
 #endif
       ^
 1 warning generated.
 compiling BSP.c...
-main.c(9): warning: In file included from...
-./BSP.h(11): warning: no newline at end of file [-Wnewline-eof]
-#endif
-      ^
-main.c(15): warning: function 'toggle_red' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
-void toggle_red(void){
-                     ^
-main.c(25): warning: function 'toggle_blue' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
-void toggle_blue(void){
-                      ^
-main.c(55): warning: 'return' will never be executed [-Wunreachable-code-return]
-  return 0;
-         ^
-4 warnings generated.
-compiling main.c...
 assembling startup_rvmdk.S...
 linking...
-Program Size: Code=2040 RO-data=32 RW-data=620 ZI-data=360  
-".\Objects\labs.axf" - 0 Error(s), 5 Warning(s).
+Program Size: Code=2308 RO-data=32 RW-data=1644 ZI-data=680  
+".\Objects\labs.axf" - 0 Error(s), 9 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -74,7 +98,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.5.0
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:00
 </pre>
 </body>
 </html>
