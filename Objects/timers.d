@@ -1,7 +1,9 @@
-./objects/main.o: main.c C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h \
+./objects/timers.o: \
+  C:\Users\Mostafa\ Lotfy\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\timers.c \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
   C:\Users\Mostafa\ Lotfy\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\include\FreeRTOS.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   RTE\RTOS\FreeRTOSConfig.h \
   C:\Users\Mostafa\ Lotfy\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
@@ -13,11 +15,6 @@
   C:\Users\Mostafa\ Lotfy\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\include\mpu_wrappers.h \
   C:\Users\Mostafa\ Lotfy\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\include\task.h \
   C:\Users\Mostafa\ Lotfy\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\include\list.h \
-  C:\Users\Mostafa\ Lotfy\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\include\timers.h \
+  C:\Users\Mostafa\ Lotfy\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\include\queue.h \
   C:\Users\Mostafa\ Lotfy\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\include\task.h \
-  C:\ti\TivaWare_C_Series-2.2.0.295\driverlib\gpio.h \
-  C:\ti\TivaWare_C_Series-2.2.0.295\inc\hw_memmap.h \
-  C:\ti\TivaWare_C_Series-2.2.0.295\driverlib\sysctl.h \
-  C:\ti\TivaWare_C_Series-2.2.0.295\driverlib\systick.h \
-  C:\ti\TivaWare_C_Series-2.2.0.295\inc\hw_gpio.h \
-  C:\ti\TivaWare_C_Series-2.2.0.295\driverlib\interrupt.h
+  C:\Users\Mostafa\ Lotfy\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\include\timers.h
