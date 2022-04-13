@@ -76,7 +76,7 @@ extern uint32_t SystemCoreClock;
 #define configUSE_QUEUE_SETS                  1
 #define configUSE_TASK_NOTIFICATIONS          1
 #define configUSE_TRACE_FACILITY              1
-#define configUSE_TICKLESS_IDLE               1
+#define configUSE_TICKLESS_IDLE               0
 #define configUSE_APPLICATION_TASK_TAG        0
 #define configUSE_NEWLIB_REENTRANT            0
 #define configUSE_CO_ROUTINES                 0
@@ -87,7 +87,7 @@ extern uint32_t SystemCoreClock;
 #define configASSERT( x )                     if( ( x ) == 0 ) { taskDISABLE_INTERRUPTS(); for( ;; ); }
 
 /* Constants that define which hook (callback) functions should be used. */
-#define configUSE_IDLE_HOOK                   0
+#define configUSE_IDLE_HOOK                   1
 #define configUSE_TICK_HOOK                   0
 #define configUSE_DAEMON_TASK_STARTUP_HOOK    0
 #define configUSE_MALLOC_FAILED_HOOK          0
