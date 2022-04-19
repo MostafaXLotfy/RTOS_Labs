@@ -26,9 +26,7 @@ Project File Date:  04/13/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
-Build target 'Target 1'
-compiling freertos_evr.c...
-compiling list.c...
+Rebuild target 'Target 1'
 main.c(26): warning: unused parameter 'pvParameters' [-Wunused-parameter]
 void toggle_red(void *pvParameters){
                       ^
@@ -47,21 +45,169 @@ void toggle_green(void *pvParameters){
 main.c(40): warning: code will never be executed [-Wunreachable-code]
     vTaskDelete(NULL);
     ^~~~~~~~~~~
-main.c(43): warning: no previous prototype for function 'vApplicationIdleHook' [-Wmissing-prototypes]
+main.c(43): warning: unused parameter 'pvParameters' [-Wunused-parameter]
+void toggle_blue(void *pvParameters){
+                       ^
+main.c(43): warning: function 'toggle_blue' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void toggle_blue(void *pvParameters){
+                                    ^
+main.c(48): warning: code will never be executed [-Wunreachable-code]
+    vTaskDelete(NULL);
+    ^~~~~~~~~~~
+main.c(50): warning: no previous prototype for function 'vApplicationIdleHook' [-Wmissing-prototypes]
 void vApplicationIdleHook(){
      ^
-main.c(43): note: declare 'static' if the function is not intended to be used outside of this translation unit
+main.c(50): note: declare 'static' if the function is not intended to be used outside of this translation unit
 void vApplicationIdleHook(){
 ^
 static 
-main.c(43): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+main.c(50): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
 void vApplicationIdleHook(){
                          ^
-main.c(63): warning: 'return' will never be executed [-Wunreachable-code-return]
+main.c(71): warning: 'return' will never be executed [-Wunreachable-code-return]
   return 0;
          ^
-9 warnings generated.
+12 warnings generated.
 compiling main.c...
+RTE/Device/TM4C123GH6PM/system_TM4C123.c(13): warning: In file included from...
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(98): warning: In file included from...
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+44 warnings generated.
+compiling system_TM4C123.c...
+assembling startup_TM4C123.s...
+compiling freertos_evr.c...
+compiling list.c...
 C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/portable/MemMang/heap_1.c(139): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
     configASSERT( pv == NULL );
                               ^
@@ -677,8 +823,8 @@ C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/
 111 warnings generated.
 compiling tasks.c...
 linking...
-Program Size: Code=10970 RO-data=694 RW-data=8 ZI-data=5040  
-".\Objects\labs.axf" - 0 Error(s), 208 Warning(s).
+Program Size: Code=10946 RO-data=694 RW-data=8 ZI-data=5040  
+".\Objects\labs.axf" - 0 Error(s), 255 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -718,29 +864,29 @@ Package Vendor: Keil
       Include file:  Config\ARMCM\FreeRTOSConfig.h
 
    * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.4.6
-      Include file:  Source\include\FreeRTOS.h
-      Include file:  Source\include\task.h
+      Source file:   Source\portable\GCC\ARM_CM4F\port.c
       Source file:   Source\list.c
-      Include file:  Source\include\queue.h
       Source file:   Source\queue.c
       Source file:   Source\tasks.c
+      Include file:  Source\include\queue.h
+      Include file:  Source\include\FreeRTOS.h
       Include file:  Source\include\semphr.h
-      Source file:   Source\portable\GCC\ARM_CM4F\port.c
+      Include file:  Source\include\task.h
       Source file:   CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c
 
    * Component: ARM.FreeRTOS::RTOS:Heap:Heap_1:10.4.6
       Source file:   Source\portable\MemMang\heap_1.c
 
    * Component: ARM.FreeRTOS::RTOS:Timers:10.4.6
-      Source file:   Source\timers.c
       Include file:  Source\include\timers.h
+      Source file:   Source\timers.c
 
    * Component: ARM::CMSIS:CORE:5.5.0
 
    * Component: Keil::Device:Startup:1.0.1
-      Include file:  Device\Include\TM4C123\TM4C123.h
-      Source file:   Device\Source\system_TM4C123.c
       Source file:   Device\Source\ARM\startup_TM4C123.s
+      Source file:   Device\Source\system_TM4C123.c
+      Include file:  Device\Include\TM4C123\TM4C123.h
 Build Time Elapsed:  00:00:04
 </pre>
 </body>
