@@ -49,9 +49,9 @@ extern uint32_t SystemCoreClock;
 
 /* Constants that describe the hardware and memory usage. */
 #define configCPU_CLOCK_HZ                    (SystemCoreClock)
-#define configTICK_RATE_HZ                    ((TickType_t)1000)
+#define configTICK_RATE_HZ                    ((TickType_t)100)
 #define configTOTAL_HEAP_SIZE                 ((size_t)4096)
-#define configMINIMAL_STACK_SIZE              ((uint16_t)128)
+#define configMINIMAL_STACK_SIZE              ((uint16_t)64)
 #define configSUPPORT_DYNAMIC_ALLOCATION      1
 #define configSUPPORT_STATIC_ALLOCATION       0
 
@@ -87,7 +87,7 @@ extern uint32_t SystemCoreClock;
 #define configASSERT( x )                     if( ( x ) == 0 ) { taskDISABLE_INTERRUPTS(); for( ;; ); }
 
 /* Constants that define which hook (callback) functions should be used. */
-#define configUSE_IDLE_HOOK                   1
+#define configUSE_IDLE_HOOK                   0
 #define configUSE_TICK_HOOK                   0
 #define configUSE_DAEMON_TASK_STARTUP_HOOK    0
 #define configUSE_MALLOC_FAILED_HOOK          0
