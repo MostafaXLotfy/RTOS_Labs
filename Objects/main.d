@@ -16,6 +16,8 @@
   C:\Users\Mostafa\ Lotfy\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\include\timers.h \
   C:\Users\Mostafa\ Lotfy\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\include\task.h \
   C:\Users\Mostafa\ Lotfy\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\include\queue.h \
+  C:\Users\Mostafa\ Lotfy\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\include\semphr.h \
+  C:\Users\Mostafa\ Lotfy\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\include\queue.h \
   C:\ti\TivaWare_C_Series-2.2.0.295\driverlib\gpio.h \
   C:\ti\TivaWare_C_Series-2.2.0.295\inc\hw_memmap.h \
   C:\ti\TivaWare_C_Series-2.2.0.295\driverlib\sysctl.h \

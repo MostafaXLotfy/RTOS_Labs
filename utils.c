@@ -7,13 +7,14 @@
 
 
 void itoa(uint32_t value, char* buf){
+	
 	int i = 0;
 	while(value != 0){
 			buf[i] =  (char) ('0' + (value % 10));
 			value /= 10;
 			i++;
 	}
-	
+	// reverse the string
 	int start = 0, end = i - 1;
 	char temp;
 	while (start < end){

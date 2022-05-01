@@ -21,23 +21,23 @@ Target DLL:      lmidk-agdi.dll V???
 Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
-D:\college\semster8\embedded\labs_code\labs.uvprojx
-Project File Date:  04/21/2022
+E:\college\semster8\embedded\labs_code\labs.uvprojx
+Project File Date:  04/27/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'Target 1'
-main.c(20): warning: In file included from...
+main.c(21): warning: In file included from...
 ./utils.h(7): warning: no newline at end of file [-Wnewline-eof]
 void delay(uint32_t n);
                        ^
-main.c(30): warning: no previous extern declaration for non-static variable 'counter' [-Wmissing-variable-declarations]
+main.c(31): warning: no previous extern declaration for non-static variable 'counter' [-Wmissing-variable-declarations]
 uint32_t counter = 0;
          ^
-main.c(30): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+main.c(31): note: declare 'static' if the variable is not intended to be used outside of this translation unit
 uint32_t counter = 0;
 ^
-main.c(33): warning: unused parameter 'pvParameters' [-Wunused-parameter]
+main.c(34): warning: unused parameter 'pvParameters' [-Wunused-parameter]
 void initTask(void *pvParameters){
                     ^
 main.c(68): warning: unused parameter 'pvParameters' [-Wunused-parameter]
@@ -46,40 +46,16 @@ void BTN1_CHCK_TASK(void *pvParameters){
 main.c(68): warning: function 'BTN1_CHCK_TASK' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
 void BTN1_CHCK_TASK(void *pvParameters){
                                        ^
-main.c(88): warning: implicit conversion changes signedness: 'UBaseType_t' (aka 'unsigned long') to 'long' [-Wsign-conversion]
-        portBASE_TYPE uxPriority = uxTaskPriorityGet(NULL);
-                      ~~~~~~~~~~   ^~~~~~~~~~~~~~~~~~~~~~~
-main.c(96): warning: incompatible pointer types passing 'void (void *)' to parameter of type 'TaskHandle_t' (aka 'struct tskTaskControlBlock *') [-Wincompatible-pointer-types]
-                        vTaskPrioritySet(UART_TASK, (uxPriority - 1));
-                                         ^~~~~~~~~
-C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include/task.h(1082): note: passing argument to parameter 'xTask' here
-void vTaskPrioritySet( TaskHandle_t xTask,
-                                    ^
-main.c(96): warning: implicit conversion changes signedness: 'long' to 'UBaseType_t' (aka 'unsigned long') [-Wsign-conversion]
-                        vTaskPrioritySet(UART_TASK, (uxPriority - 1));
-                        ~~~~~~~~~~~~~~~~             ~~~~~~~~~~~^~~
-main.c(99): warning: incompatible pointer types passing 'void (void *)' to parameter of type 'TaskHandle_t' (aka 'struct tskTaskControlBlock *') [-Wincompatible-pointer-types]
-                        vTaskPrioritySet(UART_TASK, (uxPriority + 1));
-                                         ^~~~~~~~~
-C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include/task.h(1082): note: passing argument to parameter 'xTask' here
-void vTaskPrioritySet( TaskHandle_t xTask,
-                                    ^
-main.c(99): warning: implicit conversion changes signedness: 'long' to 'UBaseType_t' (aka 'unsigned long') [-Wsign-conversion]
-                        vTaskPrioritySet(UART_TASK, (uxPriority + 1));
-                        ~~~~~~~~~~~~~~~~             ~~~~~~~~~~~^~~
-main.c(87): warning: unused parameter 'pvParameters' [-Wunused-parameter]
-void BTN2_CHCK_TASK(void *pvParameters){
-                          ^
-main.c(87): warning: function 'BTN2_CHCK_TASK' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
-void BTN2_CHCK_TASK(void *pvParameters){
-                                       ^
-main.c(111): warning: unused parameter 'pvParameters' [-Wunused-parameter]
+main.c(92): warning: unused variable 'xStatus' [-Wunused-variable]
+        portBASE_TYPE xStatus;
+                      ^
+main.c(90): warning: unused parameter 'pvParameters' [-Wunused-parameter]
 void UART_TASK(void *pvParameters){
                      ^
-main.c(111): warning: function 'UART_TASK' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+main.c(90): warning: function 'UART_TASK' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
 void UART_TASK(void *pvParameters){
                                   ^
-main.c(140): warning: 'return' will never be executed [-Wunreachable-code-return]
+main.c(119): warning: 'return' will never be executed [-Wunreachable-code-return]
   return 0;
          ^
 main.c(29): warning: no previous extern declaration for non-static variable 'xQueue' [-Wmissing-variable-declarations]
@@ -91,11 +67,17 @@ xQueueHandle xQueue;
 C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include\FreeRTOS.h(1003): note: expanded from macro 'xQueueHandle'
     #define xQueueHandle                  QueueHandle_t
                                           ^
-16 warnings generated.
+main.c(30): warning: no previous extern declaration for non-static variable 'xSemaphore' [-Wmissing-variable-declarations]
+SemaphoreHandle_t xSemaphore;
+                  ^
+main.c(30): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+SemaphoreHandle_t xSemaphore;
+^
+11 warnings generated.
 compiling main.c...
 linking...
-Program Size: Code=13924 RO-data=1300 RW-data=8 ZI-data=5048  
-".\Objects\labs.axf" - 0 Error(s), 16 Warning(s).
+Program Size: Code=14640 RO-data=1300 RW-data=8 ZI-data=5056  
+".\Objects\labs.axf" - 0 Error(s), 11 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -135,29 +117,29 @@ Package Vendor: Keil
       Include file:  Config\ARMCM\FreeRTOSConfig.h
 
    * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.4.6
-      Source file:   Source\tasks.c
-      Source file:   Source\list.c
-      Include file:  Source\include\FreeRTOS.h
-      Include file:  Source\include\semphr.h
-      Include file:  Source\include\queue.h
-      Include file:  Source\include\task.h
-      Source file:   Source\queue.c
-      Source file:   Source\portable\GCC\ARM_CM4F\port.c
       Source file:   CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c
+      Include file:  Source\include\task.h
+      Include file:  Source\include\semphr.h
+      Source file:   Source\tasks.c
+      Include file:  Source\include\FreeRTOS.h
+      Source file:   Source\queue.c
+      Include file:  Source\include\queue.h
+      Source file:   Source\list.c
+      Source file:   Source\portable\GCC\ARM_CM4F\port.c
 
    * Component: ARM.FreeRTOS::RTOS:Heap:Heap_1:10.4.6
       Source file:   Source\portable\MemMang\heap_1.c
 
    * Component: ARM.FreeRTOS::RTOS:Timers:10.4.6
-      Source file:   Source\timers.c
       Include file:  Source\include\timers.h
+      Source file:   Source\timers.c
 
    * Component: ARM::CMSIS:CORE:5.5.0
 
    * Component: Keil::Device:Startup:1.0.1
-      Source file:   Device\Source\system_TM4C123.c
       Include file:  Device\Include\TM4C123\TM4C123.h
       Source file:   Device\Source\ARM\startup_TM4C123.s
+      Source file:   Device\Source\system_TM4C123.c
 Build Time Elapsed:  00:00:01
 </pre>
 </body>
