@@ -22,62 +22,54 @@ Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
 E:\college\semster8\embedded\labs_code\labs.uvprojx
-Project File Date:  04/27/2022
+Project File Date:  05/15/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'Target 1'
-main.c(21): warning: In file included from...
+main.c(17): warning: non-portable path to file '"tm4c123gh6pm.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "TM4C123GH6PM.h"
+         ^~~~~~~~~~~~~~~~
+         "tm4c123gh6pm.h"
+main.c(23): warning: In file included from...
 ./utils.h(7): warning: no newline at end of file [-Wnewline-eof]
 void delay(uint32_t n);
                        ^
-main.c(31): warning: no previous extern declaration for non-static variable 'counter' [-Wmissing-variable-declarations]
-uint32_t counter = 0;
-         ^
-main.c(31): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-uint32_t counter = 0;
-^
-main.c(34): warning: unused parameter 'pvParameters' [-Wunused-parameter]
+main.c(42): warning: unused parameter 'pvParameters' [-Wunused-parameter]
+void CounterTask(void *pvParameters){
+                       ^
+main.c(42): warning: function 'CounterTask' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void CounterTask(void *pvParameters){
+                                    ^
+main.c(58): warning: unused parameter 'pvParameters' [-Wunused-parameter]
+void LedTogglerTask(void *pvParameters){
+                          ^
+main.c(58): warning: function 'LedTogglerTask' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void LedTogglerTask(void *pvParameters){
+                                       ^
+main.c(79): warning: unused parameter 'pvParameters' [-Wunused-parameter]
 void initTask(void *pvParameters){
                     ^
-main.c(68): warning: unused parameter 'pvParameters' [-Wunused-parameter]
-void BTN1_CHCK_TASK(void *pvParameters){
-                          ^
-main.c(68): warning: function 'BTN1_CHCK_TASK' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
-void BTN1_CHCK_TASK(void *pvParameters){
-                                       ^
-main.c(92): warning: unused variable 'xStatus' [-Wunused-variable]
-        portBASE_TYPE xStatus;
-                      ^
-main.c(90): warning: unused parameter 'pvParameters' [-Wunused-parameter]
-void UART_TASK(void *pvParameters){
-                     ^
-main.c(90): warning: function 'UART_TASK' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
-void UART_TASK(void *pvParameters){
-                                  ^
-main.c(119): warning: 'return' will never be executed [-Wunreachable-code-return]
+main.c(143): warning: 'return' will never be executed [-Wunreachable-code-return]
   return 0;
          ^
-main.c(29): warning: no previous extern declaration for non-static variable 'xQueue' [-Wmissing-variable-declarations]
-xQueueHandle xQueue;
-             ^
-main.c(29): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-xQueueHandle xQueue;
-^
-C:/Users/Mostafa Lotfy/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include\FreeRTOS.h(1003): note: expanded from macro 'xQueueHandle'
-    #define xQueueHandle                  QueueHandle_t
-                                          ^
-main.c(30): warning: no previous extern declaration for non-static variable 'xSemaphore' [-Wmissing-variable-declarations]
+main.c(31): warning: no previous extern declaration for non-static variable 'xSemaphore' [-Wmissing-variable-declarations]
 SemaphoreHandle_t xSemaphore;
                   ^
-main.c(30): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+main.c(31): note: declare 'static' if the variable is not intended to be used outside of this translation unit
 SemaphoreHandle_t xSemaphore;
 ^
-11 warnings generated.
+main.c(32): warning: no previous extern declaration for non-static variable 'xMutex' [-Wmissing-variable-declarations]
+SemaphoreHandle_t xMutex;
+                  ^
+main.c(32): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+SemaphoreHandle_t xMutex;
+^
+10 warnings generated.
 compiling main.c...
 linking...
-Program Size: Code=14640 RO-data=1300 RW-data=8 ZI-data=5056  
-".\Objects\labs.axf" - 0 Error(s), 11 Warning(s).
+Program Size: Code=16124 RO-data=2176 RW-data=1644 ZI-data=5064  
+".\Objects\labs.axf" - 0 Error(s), 10 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -93,7 +85,7 @@ Package Vendor: ARM
                 Bundle of FreeRTOS for Cortex-M and Cortex-A
    * Component: Config Variant: FreeRTOS Version: 10.4.6
    * Component: Core Variant: Cortex-M Version: 10.4.6
-   * Component: Heap Variant: Heap_1 Version: 10.4.6
+   * Component: Heap Variant: Heap_2 Version: 10.4.6
    * Component: Timers Version: 10.4.6
 
 Package Vendor: Keil
@@ -118,17 +110,17 @@ Package Vendor: Keil
 
    * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.4.6
       Source file:   CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c
-      Include file:  Source\include\task.h
-      Include file:  Source\include\semphr.h
-      Source file:   Source\tasks.c
-      Include file:  Source\include\FreeRTOS.h
-      Source file:   Source\queue.c
       Include file:  Source\include\queue.h
+      Include file:  Source\include\FreeRTOS.h
       Source file:   Source\list.c
+      Source file:   Source\tasks.c
+      Source file:   Source\queue.c
+      Include file:  Source\include\semphr.h
+      Include file:  Source\include\task.h
       Source file:   Source\portable\GCC\ARM_CM4F\port.c
 
-   * Component: ARM.FreeRTOS::RTOS:Heap:Heap_1:10.4.6
-      Source file:   Source\portable\MemMang\heap_1.c
+   * Component: ARM.FreeRTOS::RTOS:Heap:Heap_2:10.4.6
+      Source file:   Source\portable\MemMang\heap_2.c
 
    * Component: ARM.FreeRTOS::RTOS:Timers:10.4.6
       Include file:  Source\include\timers.h
@@ -137,8 +129,8 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.5.0
 
    * Component: Keil::Device:Startup:1.0.1
-      Include file:  Device\Include\TM4C123\TM4C123.h
       Source file:   Device\Source\ARM\startup_TM4C123.s
+      Include file:  Device\Include\TM4C123\TM4C123.h
       Source file:   Device\Source\system_TM4C123.c
 Build Time Elapsed:  00:00:01
 </pre>
